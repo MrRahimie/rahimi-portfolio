@@ -97,12 +97,14 @@ html.dark ::-webkit-scrollbar-thumb {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    -webkit-text-fill-color: transparent;
   }
   html.dark .gradient-text {
     background: linear-gradient(120deg, #ffb5a7 0%, #f5e8da 55%, #bde0fe 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    -webkit-text-fill-color: transparent;
   }
   .noise::before {
     content: "";

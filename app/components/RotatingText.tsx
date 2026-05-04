@@ -33,12 +33,9 @@ export default function RotatingText({
   }, [words.length, interval]);
 
   return (
-    <span
-      className={`relative inline-block align-baseline ${className}`}
-      aria-live="polite"
-    >
-      {/* Invisible spacer keeps the inline-block at the longest word's width */}
-      <span aria-hidden className="invisible whitespace-nowrap">
+    <span className="relative inline-block align-baseline" aria-live="polite">
+      {/* Invisible spacer — inherits font styles from className for accurate width */}
+      <span aria-hidden className={`invisible whitespace-nowrap ${className}`}>
         {longest}
       </span>
       <span className="absolute inset-0 overflow-hidden whitespace-nowrap">
@@ -49,7 +46,7 @@ export default function RotatingText({
             animate={reduce ? { opacity: 1 } : { y: 0, opacity: 1 }}
             exit={reduce ? { opacity: 0 } : { y: "-110%", opacity: 0 }}
             transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-            className="block"
+            className={`block ${className}`}
           >
             {words[index]}
           </motion.span>

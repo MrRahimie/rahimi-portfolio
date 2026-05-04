@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { HiArrowDown, HiOutlineMail } from "react-icons/hi";
+import { HiDownload, HiOutlineMail } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import AnimatedText from "../components/AnimatedText";
 import ImageWithFallback from "../components/ImageWithFallback";
@@ -80,8 +80,12 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.7 }}
             className="mt-7 flex flex-wrap items-center gap-3"
           >
-            <a href="#projects" className="btn-primary">
-              View Projects <HiArrowDown className="rotate-[-30deg]" />
+            <a
+              href={personalInfo.resumeUrl}
+              download
+              className="btn-primary"
+            >
+              <HiDownload /> Download Resume 
             </a>
             <a href="#contact" className="btn-secondary">
               <HiOutlineMail /> Contact Me
@@ -166,7 +170,7 @@ export default function Hero() {
             className="absolute -left-2 bottom-6 rounded-2xl border border-white/70 bg-white/85 px-3 py-2 shadow-soft backdrop-blur-md sm:-left-4 sm:bottom-8 sm:px-4 sm:py-3 dark:border-white/10 dark:bg-dusk/85 dark:shadow-soft-dark"
           >
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-mocha dark:text-haze">
-              Currently
+              Previous Role
             </p>
             <p className="mt-0.5 text-sm font-semibold text-ink dark:text-sand">
               Enterprise Tech Trainee

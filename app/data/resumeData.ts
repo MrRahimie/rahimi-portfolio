@@ -70,14 +70,20 @@ export const personalInfo = {
   fullName: "Muhammad Rahimi Bin Sarifuddin",
   role: "Software Engineer",
   tagline:
-    "Software Engineering graduate building thoughtful products across web, AI, and enterprise systems.",
+    "Software Engineering graduate building thoughtful products across web AI and enterprise systems.",
   location: "Kuala Lumpur, Malaysia",
   email: "muhd.rahimi0211@gmail.com",
   phone: "+60 13 776 9261",
   resumeUrl: "/RESUME_MUHAMMAD_RAHIMI.pdf", // drop your resume PDF in /public to enable
   // REPLACE with your own portrait — saved at /app/assets/images/hero/portrait.jpg
   heroImage: "/images/hero/portrait.jpg",
-  aboutImage: "/images/about/about.jpg",
+  // Add more photos to /public/images/about/ and list them here
+  aboutImages: [
+    "/images/about/about.jpg",
+    "/images/about/about2.jpg",
+    "/images/about/about3.jpg",
+    "/images/about/about4.jpg"
+  ],
   socials: [
     {
       label: "GitHub",
@@ -100,15 +106,15 @@ export const personalInfo = {
 export const aboutMe = {
   title: "About Me",
   paragraphs: [
-    "I'm a final-year Software Engineering student at the University of Malaya (CGPA 3.81), graduating in 2026. I enjoy turning real business problems into clean, dependable software.",
-    "At bolttech I work on Oracle BIP templates, ERP integrations, and Agentic AI enablement across Oracle ERP and HCM modules — bridging the gap between enterprise complexity and approachable user experiences.",
+    "I was a Software Engineering student at the University of Malaya (CGPA 3.81), graduating in 2026. I enjoy turning real business problems into clean, dependable solutions.",
+    "At bolttech I work on Oracle BIP templates, ERP integrations and Agentic AI enablement across Oracle ERP and HCM modules — bridging the gap between enterprise complexity and approachable user experiences.",
     "Outside of enterprise work, I love crafting modern web apps with the PERN and MERN stacks, and exploring how AI can make day-to-day workflows feel effortless."
   ],
   facts: [
     { label: "CGPA", value: "3.81 / 4.00" },
     { label: "Graduating", value: "2026" },
     { label: "Based in", value: "Kuala Lumpur" },
-    { label: "Open to", value: "Software / AI roles" }
+    { label: "Open to", value: "Software / Enterprise Systems roles" }
   ]
 };
 

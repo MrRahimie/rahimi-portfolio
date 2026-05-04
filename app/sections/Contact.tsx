@@ -19,18 +19,31 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const subject = encodeURIComponent(
-      `Portfolio enquiry from ${name || "a visitor"}`
-    );
-    const body = encodeURIComponent(
-      `Hi Rahimi,\n\n${message}\n\n— ${name}\n${email}`
-    );
-    window.location.href = `mailto:${personalInfo.email}?subject=${subject}&body=${body}`;
-    setSubmitted(true);
+    setStatus("sending");
+    try {
+      const res = await fetch(
+        process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT as string,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({ name, email, message }),
+        }
+      );
+      if (res.ok) {
+        setStatus("success");
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -173,14 +186,28 @@ export default function Contact() {
             />
           </div>
 
-          <button type="submit" className="btn-primary mt-5 w-full sm:w-auto">
-            {submitted ? "Mail draft opened ✓" : "Send message"}
+          <button
+            type="submit"
+            disabled={status === "sending" || status === "success"}
+            className="btn-primary mt-5 w-full sm:w-auto disabled:opacity-60"
+          >
+            {status === "sending"
+              ? "Sending…"
+              : status === "success"
+              ? "Message sent ✓"
+              : "Send message"}
           </button>
 
-          <p className="mt-3 text-xs text-ink/55 dark:text-sand/55">
-            Submitting opens your email client with a pre-filled draft. No data
-            is stored.
-          </p>
+          {status === "error" && (
+            <p className="mt-3 text-xs text-red-500">
+              Something went wrong — please try again or email me directly.
+            </p>
+          )}
+          {status === "idle" && (
+            <p className="mt-3 text-xs text-ink/55 dark:text-sand/55">
+              Your message goes straight to my inbox. No data is stored.
+            </p>
+          )}
         </motion.form>
       </div>
     </SectionWrapper>
