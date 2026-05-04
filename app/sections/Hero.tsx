@@ -42,11 +42,14 @@ export default function Hero() {
               className="block text-ink/70 dark:text-sand/70"
             />
             <span className="block">
-              <AnimatedText
-                text={personalInfo.name}
+              <motion.span
                 className="gradient-text"
-                delay={0.1}
-              />
+                initial={{ opacity: 0, y: 18 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.55, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+              >
+                {personalInfo.name}
+              </motion.span>
               <span className="text-coral">.</span>
             </span>
           </h1>
