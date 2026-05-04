@@ -74,7 +74,7 @@ export const personalInfo = {
   location: "Kuala Lumpur, Malaysia",
   email: "muhd.rahimi0211@gmail.com",
   phone: "+60 13 776 9261",
-  resumeUrl: "/RESUME_MUHAMMAD_RAHIMI.pdf", // drop your resume PDF in /public to enable
+  resumeUrl: "/RESUME_MUHAMMAD RAHIMI.pdf", // drop your resume PDF in /public to enable
   // REPLACE with your own portrait — saved at /app/assets/images/hero/portrait.jpg
   heroImage: "/images/hero/portrait.jpg",
   // Add more photos to /public/images/about/ and list them here
