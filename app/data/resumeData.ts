@@ -70,7 +70,7 @@ export const personalInfo = {
   fullName: "Muhammad Rahimi Bin Sarifuddin",
   role: "Software Engineer",
   tagline:
-    "Software Engineering graduate building thoughtful products across web AI and enterprise systems.",
+    "Software Engineering graduate building thoughtful products across web, AI and enterprise systems.",
   location: "Kuala Lumpur, Malaysia",
   email: "muhd.rahimi0211@gmail.com",
   phone: "+60 13 776 9261",
@@ -87,7 +87,7 @@ export const personalInfo = {
   socials: [
     {
       label: "GitHub",
-      href: "https://github.com/",
+      href: "https://github.com/MrRahimie",
       icon: "github"
     },
     {
@@ -107,7 +107,7 @@ export const aboutMe = {
   title: "About Me",
   paragraphs: [
     "I was a Software Engineering student at the University of Malaya (CGPA 3.81), graduating in 2026. I enjoy turning real business problems into clean, dependable solutions.",
-    "At bolttech I work on Oracle BIP templates, ERP integrations and Agentic AI enablement across Oracle ERP and HCM modules — bridging the gap between enterprise complexity and approachable user experiences.",
+    "At bolttech, I work on Oracle BIP templates, ERP integrations and Agentic AI enablement across Oracle ERP and HCM modules. My focus is on bridging the gap between enterprise complexity and approachable user experiences.",
     "Outside of enterprise work, I love crafting modern web apps with the PERN and MERN stacks, and exploring how AI can make day-to-day workflows feel effortless."
   ],
   facts: [
@@ -124,7 +124,7 @@ export const experiences: Experience[] = [
     company: "bolttech",
     duration: "Sep 2025 – Mar 2026",
     description: [
-      "Handle technical and functional change requests across Oracle BIP templates, ERP integrations, and configurations.",
+      "Handle technical and functional change requests across Oracle BIP templates, ERP integrations and configurations.",
       "Contribute to Agentic AI enablement planning across Oracle ERP and HCM modules.",
       "Collaborate with cross-functional teams to analyze requirements and implement system enhancements."
     ],
@@ -175,7 +175,7 @@ export const projects: Project[] = [
       "Final Year Project — a PERN stack web platform for University Malaya dental students featuring structured learning modules, real case-based exams, role-based access, and discussion forums to improve diagnostic skills and clinical readiness.",
     image: "/images/projects/oddesy.jpg",
     stack: ["PostgreSQL", "Express", "React", "Node.js", "Tailwind"],
-    links: [{ label: "View Project", href: "#" }],
+    links: [{ label: "View Project", href: "https://oddesy-nine.vercel.app/" }],
     highlight: true
   },
   {
@@ -185,7 +185,7 @@ export const projects: Project[] = [
       "Independently designed and deployed the VNDP Oracle AR Invoice template end-to-end, from requirements gathering and BIP development through staging, UAT, and production rollout.",
     image: "/images/projects/vndp.jpg",
     stack: ["Oracle BIP", "Oracle Fusion", "SQL", "XML"],
-    links: [{ label: "Case Study", href: "#" }]
+    links: [{ label: "Not Available", href: "#" }]
   },
   {
     title: "ServiceSavvy",
@@ -197,7 +197,7 @@ export const projects: Project[] = [
     // To add a real link, replace "#" with your GitHub or live URL, e.g.:
     // { label: "GitHub", href: "https://github.com/yourusername/servicesavvy" }
     // { label: "Live Demo", href: "https://servicesavvy.vercel.app" }
-    links: [{ label: "View Project", href: "#" }]
+    links: [{ label: "View Project", href: "https://github.com/MrRahimie/Service-Savvy-Web.git" }]
   },
   {
     title: "StudyLah",
@@ -206,14 +206,14 @@ export const projects: Project[] = [
       "An Android application supporting primary school students in Mathematics and Science. Integrated Firebase for secure authentication and real-time data storage.",
     image: "/images/projects/studylah.jpg",
     stack: ["Java", "Android", "Firebase"],
-    links: [{ label: "View Project", href: "#" }]
+    links: [{ label: "Not Available", href: "#" }]
   }
 ];
 
 export const skillGroups: SkillGroup[] = [
   {
     group: "Languages",
-    description: "What I write code in day to day.",
+    description: "",
     items: [
       { name: "Java", icon: FaJava },
       { name: "JavaScript", icon: SiJavascript },
@@ -226,7 +226,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     group: "Web & Frameworks",
-    description: "Stacks I reach for when building products.",
+    description: "",
     items: [
       { name: "React", icon: SiReact },
       { name: "Next.js", icon: SiNextdotjs },
@@ -239,7 +239,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     group: "Enterprise & Data",
-    description: "Where my Oracle and database work happens.",
+    description: "",
     items: [
       { name: "Oracle Fusion", icon: FaServer },
       { name: "Oracle BI Publisher", icon: FaDatabase },
@@ -251,7 +251,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     group: "Tools & Workflow",
-    description: "The things on my desktop most of the day.",
+    description: "",
     items: [
       { name: "Git", icon: SiGit },
       { name: "GitHub", icon: SiGithub },

@@ -14,8 +14,7 @@ export default function Skills() {
           Skills &amp; <span className="gradient-text">stack</span>
         </h2>
         <p className="mt-4 text-ink/70 md:text-lg dark:text-sand/70">
-          The tools, languages, and platforms I&apos;ve worked with — from the web
-          stack to enterprise Oracle systems.
+        Tools, languages, and platforms I have worked with, spanning modern web development and enterprise Oracle systems.
         </p>
       </div>
 

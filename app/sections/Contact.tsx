@@ -56,9 +56,8 @@ export default function Contact() {
             <span className="gradient-text">together</span>
           </h2>
           <p className="mt-4 text-ink/70 md:text-lg dark:text-sand/70">
-            I&apos;m open to software, AI, and data-driven roles, freelance work,
-            or just a friendly chat about engineering. Drop a line — I usually
-            reply within a day.
+            I&apos;m open to software, AI, freelance work
+            or just a friendly chat about academics and career opportunities.
           </p>
 
           <ul className="mt-8 space-y-3">
@@ -181,7 +180,7 @@ export default function Contact() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               rows={5}
-              placeholder="Tell me about your project or role…"
+              placeholder="Tell me anything!"
               className="mt-2 w-full resize-none rounded-2xl border border-black/5 bg-cream/70 px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus:border-coral focus:outline-none focus:ring-2 focus:ring-coral/40 dark:border-white/10 dark:bg-white/[0.05] dark:text-sand dark:placeholder:text-sand/40 dark:focus:border-coral/60 dark:focus:ring-coral/30"
             />
           </div>

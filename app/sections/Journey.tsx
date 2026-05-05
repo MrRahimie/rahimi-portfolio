@@ -32,7 +32,7 @@ export default function Journey() {
           </h2>
           <p className="mt-4 text-ink/70 dark:text-sand/70 md:text-lg">
             Roles where I&apos;ve shipped real systems and the studies that
-            shaped my engineering foundation. Switch tabs to explore each track.
+            shaped my engineering foundation.
           </p>
         </div>
 

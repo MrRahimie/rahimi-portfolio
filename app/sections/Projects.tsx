@@ -16,8 +16,7 @@ export default function Projects() {
             Selected <span className="gradient-text">projects</span>
           </h2>
           <p className="mt-4 text-ink/70 md:text-lg dark:text-sand/70">
-            A mix of academic, internship, and personal work — each one taught
-            me something I now use every day.
+          A mix of academic, internship and personal projects that have each shaped how I work today and continue to influence what I build.
           </p>
         </div>
       </div>
